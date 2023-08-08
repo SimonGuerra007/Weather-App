@@ -1,0 +1,44 @@
+/* w-full p-5 fixed top-0 -left[-100%] */
+/* bg-white/30 p-3 rounded-2xl my-2 flex justify-around */
+
+.navbar {
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather_info {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+}
+
+.weather_info--op {
+    background-color: rgba(255, 255, 255, 0.301);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather_info {
+        grid-template-columns: 1fr ;
+    }
+
+    .weather_info--op {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}

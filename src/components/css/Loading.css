@@ -1,0 +1,14 @@
+.rotate-icon {
+    animation-name: rotate-icons;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes rotate-icons {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+}
